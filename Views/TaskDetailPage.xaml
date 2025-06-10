@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TaskApp.Views.TaskDetailPage"
+             Title="Detalle de Tarea">
+    <StackLayout Padding="10">
+        <Entry x:Name="nameEntry" Placeholder="Nombre de la tarea" />
+        <Editor x:Name="descriptionEditor" Placeholder="Descripción" HeightRequest="100" />
+        <Button Text="Guardar" Clicked="OnSaveClicked" />
+        <Button Text="Eliminar" Clicked="OnDeleteClicked" IsVisible="False" x:Name="deleteButton" />
+    </StackLayout>
+</ContentPage>
